@@ -12,8 +12,6 @@ def at_content(seq):
     at = (a + t) / len(seq) * 100
     return at
 
-print("AT content:", at_content(sequence))
-
 sequence = read_fasta("data/sequence.fasta")
 print(sequence)
 
@@ -23,3 +21,4 @@ def gc_content(seq):
     gc = (g + c) / len(seq) * 100
     return gc
 print("GC content:", gc_content(sequence))
+print("AT content:", at_content(sequence))
